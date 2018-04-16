@@ -1,6 +1,7 @@
 {
   "name": "ecsa",
   "version": "0.1.0",
+  "homepage": "https://samepant.github.io/ecsademo/",
   "private": true,
   "dependencies": {
     "animated": "^0.2.2",

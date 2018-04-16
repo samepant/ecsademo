@@ -47,3 +47,10 @@ button:hover {
   background: #222;
   color: white;
 }
+
+@media (max-width: 850px) {
+  button:hover {
+    background: white;
+    color: #222;
+  }
+}

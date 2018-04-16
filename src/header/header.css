@@ -53,6 +53,10 @@ header {
   display: none;
 }
 
+.nav-box button::after {
+  content: '';
+}
+
 .pop-menu {
   background: coral;
   position: fixed;

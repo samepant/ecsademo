@@ -34,7 +34,7 @@
 }
 
 .second button:after {
-  content: '↗';
+  content: "\2197\FE0E";
   top: 0.5em;
 }
 

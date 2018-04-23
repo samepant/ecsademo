@@ -6,7 +6,7 @@ const Footer = (props) => {
     <div className='footer'>
       <div className='first'>
         <button><a href='https://medium.com/economic-spacing'>Learn more about the community</a></button>
-        <button><a href='#contact'>Join our work</a></button>
+        <button><a href='#contact' onClick={props.contactFunction}>Join our work</a></button>
         <p>© 2018 ECSA</p>
       </div>
       <div className='second'>

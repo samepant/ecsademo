@@ -70,4 +70,8 @@
   .second {
     width: 100%;
   }
+
+  .footer {
+    padding: 0 1em;
+  }
 }

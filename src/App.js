@@ -11,7 +11,17 @@ class App extends Component {
     super()
 
     this.state = {
-      showContact: true
+      showContact: false
+    }
+
+    this.toggleContact = this.toggleContact.bind(this)
+  }
+
+  toggleContact() {
+    if (this.state.showContact) {
+      this.setState({showContact: false})
+    } else {
+      this.setState({showContact: true})
     }
   }
 
@@ -19,10 +29,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Hero />
+        <Hero contactFunction={this.toggleContact} />
         <Gravity />
-        <Footer />
-        
+        <Footer contactFunction={this.toggleContact} />
+        { this.state.showContact && <Contact contactFunction={this.toggleContact} />}
       </div>
     )
   }

@@ -100,7 +100,9 @@
   }
 
   .hero-buttons button {
-    min-width: 300px;
+    margin-right: 1.5em;
+    width: 100%;
+    min-width: auto;
   }
 
   .illo .big-star {

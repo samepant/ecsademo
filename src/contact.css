@@ -1,14 +1,41 @@
 .contact {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   padding: 2em;
   display: flex;
   justify-content: center;
+}
+
+button.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+}
+
+button.close {
+  background: white;
+  font-size: 1em;
+  border: 1px solid #222;
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+}
+
+button.close::after {
+  content: '';
+}
+
+#mc_embed_signup {
+  position: relative;
+  padding: 5em 3em 3em 3em;
+  background: white;
+  max-height: 650px;
 }
 
 .mc-field-group {
@@ -26,6 +53,7 @@
 }
 
 .mc-field-group label {
+  cursor: url('./assets/closed.png') 20 10, crosshair;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,6 +66,7 @@
 
 .mc-field-group.input-group label {
   position: relative;
+  display: inline-block;
 }
 
 .mc-field-group ul {
@@ -60,7 +89,7 @@
 .button:hover {
   background: #222;
   color: white;
-  cursor: url('/buttonopen.png') 20 10, crosshair;
+  cursor: url('./assets/buttonopen.png') 20 10, crosshair;
 }
 
 .radio-group {
@@ -76,13 +105,12 @@
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .radio-group input {
   position: absolute;
   opacity: 0;
+  width: auto;
 }
 
-/* Create a custom radio button */
 .checkmark {
   position: absolute;
   top: 0;
@@ -91,6 +119,10 @@
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
+}
+
+.radio-group:hover {
+  cursor: url('./assets/open.png') 20 10, crosshair;
 }
 
 .radio-group:hover input ~ .checkmark {
@@ -118,4 +150,32 @@
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+@media (max-width: 850px) {
+  .mc-field-group {
+    min-width: 215px;
+  }
+  
+  .mc-field-group h3{
+    font-size: 1em;
+  }
+  
+  .mc-field-group label{
+    font-size: 1em;
+  }
+
+  #mc_embed_signup h2 {
+    font-size: 1em;
+  }
+
+  #mc_embed_signup {
+    padding: 5em 1em 1em 1em;
+    overflow-y: scroll;
+  }
+
+  .contact {
+    background: white;
+    padding: 1em;
+  }
 }

@@ -71,7 +71,7 @@ a:hover {
 button:hover {
   color: white;
   background: #222;
-  cursor: url('./assets/open.png') 10 10, crosshair;
+  cursor: url('./assets/buttonopen.png') 20 10, crosshair;
 }
 
 @media (max-width: 850px) {

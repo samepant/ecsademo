@@ -18,6 +18,7 @@ export default class contact extends React.Component {
     return (
       <div className='contact'>
           <div id="mc_embed_signup">
+           <button className='close' onClick={this.props.contactFunction}>╳</button>
             <form action="https://agency.us16.list-manage.com/subscribe/post?u=c669cb7717a6e816f390971fc&amp;id=3b6b6d8f03" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
               <h2>Thanks for your interest!</h2>
@@ -58,7 +59,7 @@ export default class contact extends React.Component {
                 <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
               </div>  
                 <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_c669cb7717a6e816f390971fc_3b6b6d8f03" tabIndex="-1" value="" /></div>
-                <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+                <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" onClick={this.props.contactFunction} /></div>
               </div>
             </form>
           </div>

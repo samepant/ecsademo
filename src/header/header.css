@@ -14,18 +14,20 @@ header {
 .logo {
   width: 100%;
   max-width: 200px;
-  margin: 1em 0 0 0;
+  margin: 2em 0 0 1em;
 }
 
 .nav {
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 6em 0 0;
 }
 
 .nav li {
-  margin: 2.5em 1.8em;
+  margin: 5.5em 0 3em 0;
+  transform: rotateZ(-30deg);
+  width: 60px;
 }
 
 .nav li:last-child {
@@ -36,11 +38,12 @@ header {
   display: block;
   color: #222;
   text-decoration: none;
-  transform: rotateZ(-30deg);
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav a:hover {
-  transform: rotateZ(-30deg) skew(-15deg);
+  transform: skew(-15deg);
 }
 
 .nav-box button {
@@ -91,5 +94,6 @@ header {
 
   .logo {
     max-width: 150px;
+    margin: 1em 0 0 0;
   }
 }

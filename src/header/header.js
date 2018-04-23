@@ -28,9 +28,9 @@ export class Header extends Component {
         </div>
         <div className='nav-box'>
           <ul className='nav'>
-            <li><a href='#'>Blog</a></li>
+            <li><a href='https://medium.com/economic-spacing'>Blog</a></li>
             <li><a href='#'>White paper</a></li>
-            <li><a href='#'>Join us on telegram</a></li>
+            <li><a href='https://t.me/economicspaceagency'>Join us on telegram</a></li>
           </ul>
           <button onClick={this.toggleMenu}>Menu</button>
           {this.state.showPopMenu && <PopMenu closeFunction={this.toggleMenu} />}
@@ -91,9 +91,9 @@ class PopMenu extends Component {
         <button onClick={this.props.closeFunction}>╳</button>
         <Logo isLight={true} />
         <ul className='nav'>
-          <li><a href='#'>Blog</a></li>
+          <li><a href='https://medium.com/economic-spacing'>Blog</a></li>
           <li><a href='#'>White paper</a></li>
-          <li><a href='#'>Join us on telegram</a></li>
+          <li><a href='https://t.me/economicspaceagency'>Join us on telegram</a></li>
         </ul>
       </div>
     )

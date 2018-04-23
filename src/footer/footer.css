@@ -6,8 +6,20 @@
   padding: 0 2em;
 }
 
+.footer button a {
+  padding: 0.5em;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
 .first button {
   width: 70%;
+  padding: 0;
+}
+
+.first button a {
+  padding: 1em;
 }
 
 .first p {
@@ -24,7 +36,7 @@
 
 .second button {
   width: 100%;
-  padding: 0.5em;
+  padding: 0;
   margin-bottom: 0;
   border-bottom: 0
 }
@@ -36,6 +48,18 @@
 .second button:after {
   content: "\2197\FE0E";
   top: 0.5em;
+}
+
+.second a {
+  padding: 0.5em;
+  display: block;
+  color: black;
+  text-decoration: none;
+
+}
+
+.footer button a:hover {
+  color: white;
 }
 
 @media (max-width: 850px) {

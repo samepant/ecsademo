@@ -6,22 +6,22 @@ const Gravity = (props) => {
     <div className='project-box'>
       <h2>Our projects</h2>
       <div className='project'>
-        <p><span className='project-name'>Gravity</span> is a distributed smart contracts protocol. It empowers decentralized governance and value exchange, allowing for the creation of both public and private contracts while maintaining full interoperability among networked constellations of autonomous agents.</p>
+        <p><span className='project-name'>Gravity</span> is a resilient distributed programming language and runtime, with a secure computational model and cryptographically secured persistent state and protocols.</p>
         <ul className='features'>
           <li>
             <img alt='gravity illustration' src='gravity-network.png' />
-            <h3>Network of agents and contracts: </h3>
-            <p>Gravity enables autonomous agents to define and agree to the protocols that govern their economic interactions.</p>
+            <h3>Protocol</h3>
+            <p>The Gravity protocol implements a language based on lambda calculus, prototypes and message passing, and object capabilities, programing secure protocols.</p>
           </li>
           <li>
             <img alt='gravity illustration' src='gravity-dapps.png' />
-            <h3>Scalable and private decentralized apps:</h3>
-            <p>The Gravity protocol connects networks of interoperable VMs to foster decentralized, resilient, secure and private applications.</p>
+            <h3>Node</h3>
+            <p>A Gravity Node is a fully isolated computational process, with private state and only connected to other Gravity nodes through cryptographic capabilities.</p>
           </li>
           <li>
             <img alt='gravity illustration' src='gravity-vmstack.png' />
-            <h3>Powerful VM stack:</h3>
-            <p>The virtual machines that execute the contract code are autonomous and self-governed while retaining interoperability.</p>
+            <h3>Application</h3>
+            <p>A Gravity Application implements protocols and consistent computation that can span across full networks of Gravity nodes.</p>
           </li>
         </ul>
       </div>
@@ -42,6 +42,21 @@ const Gravity = (props) => {
             <img alt='Space illustration' src='space-finance.png' />
             <h3>Unleash the power of collaborative finance</h3>
             <p>Design economic spaces that rely on equity-based relations; leverage the unrealized value of risk-taking and speculating as a community</p>
+          </li>
+        </ul>
+      </div>
+      <div className='project'>
+        <p><span className='project-name'>Accelerator’s</span> mission is to foster, form, and facilitate economic spaces that form the economic stack - the infrastructure of a new paradigm of economic autonomy.</p>
+        <ul className='features'>
+          <li>
+            <img alt='Space illustration' src='accelerate.png' />
+            <h3>Space Accelerator</h3>
+            <p>We provide consulting services to spaces that relate to us as external network members and clients. Please inspect our public service book on Github/Dynalist and contact us.</p>
+          </li>
+          <li>
+            <img alt='Space illustration' src='amplify.png' />
+            <h3>Signal Amplification</h3>
+            <p>Cryptoeconomics and space invention content, research, and cutting edge thinking. Contact us to learn about our workshops, courses, curriculum and other media.</p>
           </li>
         </ul>
       </div>

@@ -5,17 +5,17 @@ const Footer = (props) => {
   return (
     <div className='footer'>
       <div className='first'>
-        <button>Learn more about the community</button>
-        <button>Join our work</button>
+        <button><a href='https://medium.com/economic-spacing'>Learn more about the community</a></button>
+        <button><a href='#contact'>Join our work</a></button>
         <p>© 2018 ECSA</p>
       </div>
       <div className='second'>
-        <button>Library</button>
-        <button>Twitter</button>
-        <button>Telegram</button>
-        <button>Facebook</button>
-        <button>Medium</button>
-        <button>Youtube</button>
+        <button><a href='http://library.ecsa.io/index.php?title=Economic_Space_Agency_--_Library'>Library</a></button>
+        <button><a href='https://twitter.com/ecsa_team?lang=en'>Twitter</a></button>
+        <button><a href='https://t.me/economicspaceagency'>Telegram</a></button>
+        <button><a href='https://www.facebook.com/economicspaceagency/'>Facebook</a></button>
+        <button><a href='https://medium.com/economic-spacing'>Medium</a></button>
+        <button><a href='https://www.youtube.com/channel/UCUYSiFZWVcCnL0YMG7Qmvjg'>Youtube</a></button>
       </div>
     </div>
   )

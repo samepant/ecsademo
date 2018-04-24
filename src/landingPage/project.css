@@ -42,6 +42,10 @@
   margin-bottom: 4em;
 }
 
+.full-image-strength .features img {
+  opacity: 1;
+}
+
 .features img {
   position: absolute;
   height: 90%;

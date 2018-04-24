@@ -4,9 +4,9 @@ import './project.css'
 const Gravity = (props) => {
   return (
     <div className='project-box'>
-      <h2>Our projects</h2>
-      <div className='project'>
-        <p><span className='project-name'>Gravity</span> is a resilient distributed programming language and runtime, with a secure computational model and cryptographically secured persistent state and protocols.</p>
+      <h2>ECSA projects currently incubating:</h2>
+      <div className='project full-image-strength'>
+        <p><span className='project-name'>ECSA Gravity</span> is a resilient distributed programming language and runtime, with a secure computational model and cryptographically secured persistent state and protocols.</p>
         <ul className='features'>
           <li>
             <img alt='gravity illustration' src='gravity-network.png' />
@@ -46,17 +46,17 @@ const Gravity = (props) => {
         </ul>
       </div>
       <div className='project'>
-        <p><span className='project-name'>Accelerator’s</span> mission is to foster, form, and facilitate economic spaces that form the economic stack - the infrastructure of a new paradigm of economic autonomy.</p>
+        <p><span className='project-name'>ECSA Accelerator’s</span> mission is to foster, form, and facilitate economic spaces that form the economic stack: the infrastructure of a new paradigm of economic autonomy.</p>
         <ul className='features'>
           <li>
             <img alt='Space illustration' src='accelerate.png' />
             <h3>Space Accelerator</h3>
-            <p>We provide consulting services to spaces that relate to us as external network members and clients. Please inspect our public service book on Github/Dynalist and contact us.</p>
+            <p>The Accelerator team provide consulting services to spaces that relate to us as external network members and clients. Please inspect our public service book on Github/Dynalist and contact us.</p>
           </li>
           <li>
             <img alt='Space illustration' src='amplify.png' />
             <h3>Signal Amplification</h3>
-            <p>Cryptoeconomics and space invention content, research, and cutting edge thinking. Contact us to learn about our workshops, courses, curriculum and other media.</p>
+            <p>Accelerator clients gain access to workshops, courses, curriculum and other media on cryptoeconomics and space invention content, research, and bleeding edge thinking.</p>
           </li>
         </ul>
       </div>

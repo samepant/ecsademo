@@ -81,6 +81,7 @@ header {
 
 .pop-menu .nav {
   display: block;
+  margin: 0 0 0 3em;
 }
 
 @media (max-width: 850px) {

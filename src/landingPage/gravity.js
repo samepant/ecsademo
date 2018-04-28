@@ -31,17 +31,17 @@ const Gravity = (props) => {
           <li>
             <img alt='Space illustration' src='space-contract.png' />
             <h3>Programming language for economic abstraction</h3>
-            <p>Create and deploy your own smart contracts and governance templates</p>
+            <p>Create and deploy your own smart contracts and governance templates.</p>
           </li>
           <li>
             <img alt='Space illustration' src='space-token.png' />
             <h3>Issue your own token</h3>
-            <p>Facilitate fully flexible collaboration and liquidity production with modular tokens that can be customized according to the function and value representation you imagine</p>
+            <p>Facilitate fully flexible collaboration and liquidity production with modular tokens that can be customized according to the function and value representation you imagine.</p>
           </li>
           <li>
             <img alt='Space illustration' src='space-finance.png' />
             <h3>Unleash the power of collaborative finance</h3>
-            <p>Design economic spaces that rely on equity-based relations; leverage the unrealized value of risk-taking and speculating as a community</p>
+            <p>Design economic spaces that rely on equity-based relations; leverage the unrealized value of risk-taking and speculating as a community.</p>
           </li>
         </ul>
       </div>

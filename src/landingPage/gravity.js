@@ -4,9 +4,9 @@ import './project.css'
 const Gravity = (props) => {
   return (
     <div className='project-box'>
-      <h2>ECSA projects currently incubating:</h2>
+      <h2>ECSA member projects</h2>
       <div className='project full-image-strength'>
-        <p><span className='project-name'>ECSA Gravity</span> is a resilient distributed programming language and runtime, with a secure computational model and cryptographically secured persistent state and protocols.</p>
+        <p><span className='project-name'>Gravity</span> is a resilient distributed programming language and runtime, with a secure computational model and cryptographically secured persistent state and protocols.</p>
         <ul className='features'>
           <li>
             <img alt='gravity illustration' src='gravity-network.png' />
@@ -46,17 +46,22 @@ const Gravity = (props) => {
         </ul>
       </div>
       <div className='project'>
-        <p><span className='project-name'>ECSA Accelerator’s</span> mission is to foster, form, and facilitate economic spaces that form the economic stack: the infrastructure of a new paradigm of economic autonomy.</p>
+        <p><span className='project-name'>ECSA Accelerator</span> is a decentralised entity that engages in and supports the creation of new economic spaces.</p>
         <ul className='features'>
           <li>
             <img alt='Space illustration' src='accelerate.png' />
             <h3>Space Accelerator</h3>
-            <p>The Accelerator team provide consulting services to spaces that relate to us as external network members and clients. Please inspect our public service book on Github/Dynalist and contact us.</p>
+            <p>The Accelerator team offers consulting and design services to new economic spaces, formulating economic logics with clients and partners.</p>
           </li>
           <li>
             <img alt='Space illustration' src='amplify.png' />
             <h3>Signal Amplification</h3>
-            <p>Accelerator clients gain access to workshops, courses, curriculum and other media on cryptoeconomics and space invention content, research, and bleeding edge thinking.</p>
+            <p>Accelerator clients gain access to workshops, courses, and curriculum on cryptoeconomics, as well as space invention content, research, and process-based thinking.</p>
+          </li>
+          <li>
+            <img alt='Space illustration' src='portal.png' />
+            <h3>Portal to the New Economic Stack</h3>
+            <p>Accelerator empowers multiple forms of relationship to ECSA and its network. The modes of interaction we provide are a part of our value proposition.</p>
           </li>
         </ul>
       </div>

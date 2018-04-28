@@ -28,11 +28,10 @@ export class Header extends Component {
         </div>
         <div className='nav-box'>
           <ul className='nav'>
-            <li><a href='https://medium.com/economic-spacing'>Blog</a></li>
-            <li><a href='#'>White paper</a></li>
             <li><a href='https://t.me/economicspaceagency'>Join us on telegram</a></li>
+            <li><a href='https://medium.com/economic-spacing'>Blog</a></li>
           </ul>
-          <button onClick={this.toggleMenu}>Menu</button>
+          <button className='nav-button' onClick={this.toggleMenu}>Menu</button>
           {this.state.showPopMenu && <PopMenu closeFunction={this.toggleMenu} />}
         </div>
       </header>
@@ -88,12 +87,11 @@ class PopMenu extends Component {
   render () {
     return (
       <div className='pop-menu' style={{width: this.state.width, height: this.state.height}}>
-        <button onClick={this.props.closeFunction}>╳</button>
+        <button className='close nav-button' onClick={this.props.closeFunction}>╳</button>
         <Logo isLight={true} />
         <ul className='nav'>
-          <li><a href='https://medium.com/economic-spacing'>Blog</a></li>
-          <li><a href='#'>White paper</a></li>
-          <li><a href='https://t.me/economicspaceagency'>Join us on telegram</a></li>
+          <li><button><a href='https://t.me/economicspaceagency'>Join us on telegram</a></button></li>
+          <li><button><a href='https://medium.com/economic-spacing'>Blog</a></button></li>
         </ul>
       </div>
     )

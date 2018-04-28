@@ -1,14 +1,15 @@
 .contact {
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 10;
   background: rgba(255, 255, 255, 0.8);
   padding: 2em;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 button.close {
@@ -16,6 +17,7 @@ button.close {
   top: 0;
   right: 0;
   margin: 1em;
+  z-index: 5;
 }
 
 button.close {
@@ -33,9 +35,9 @@ button.close::after {
 
 #mc_embed_signup {
   position: relative;
-  padding: 5em 3em 3em 3em;
+  padding: 1em 3em 3em 3em;
   background: white;
-  max-height: 650px;
+  max-width: 700px;
 }
 
 .mc-field-group {
@@ -92,7 +94,7 @@ button.close::after {
   cursor: url('./assets/buttonopen.png') 20 10, crosshair;
 }
 
-.radio-group {
+.check-group {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -105,7 +107,7 @@ button.close::after {
   user-select: none;
 }
 
-.radio-group input {
+.check-group input {
   position: absolute;
   opacity: 0;
   width: auto;
@@ -118,18 +120,17 @@ button.close::after {
   height: 25px;
   width: 25px;
   background-color: #eee;
-  border-radius: 50%;
 }
 
-.radio-group:hover {
+.check-group:hover {
   cursor: url('./assets/open.png') 20 10, crosshair;
 }
 
-.radio-group:hover input ~ .checkmark {
+.check-group:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-.radio-group input:checked ~ .checkmark {
+.check-group input:checked ~ .checkmark {
   background-color: #222;
 }
 
@@ -139,19 +140,42 @@ button.close::after {
   display: none;
 }
 
-.radio-group input:checked ~ .checkmark:after {
+.check-group input:checked ~ .checkmark:after {
   display: block;
 }
 
-.radio-group .checkmark:after {
-  top: 8.5px;
-  left: 8.5px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+.check-group .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
+#thank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  display: none;
+}
+
+#thank h3 {
+  text-align: center;
+  font-size: 2em;
+}
 @media (max-width: 850px) {
   .mc-field-group {
     min-width: 215px;

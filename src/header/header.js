@@ -29,7 +29,7 @@ export class Header extends Component {
         <div className='nav-box'>
           <ul className='nav'>
             <li><a href='https://t.me/economicspaceagency'>Join us on telegram</a></li>
-            <li><a href='https://medium.com/economic-spacing'>Blog</a></li>
+            <li><a href='https://medium.com/economic-spacing'>Read our blog</a></li>
           </ul>
           <button className='nav-button' onClick={this.toggleMenu}>Menu</button>
           {this.state.showPopMenu && <PopMenu closeFunction={this.toggleMenu} />}

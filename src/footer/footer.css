@@ -74,4 +74,13 @@
   .footer {
     padding: 0 1em;
   }
+
+  .footer button:hover {
+    background: white;
+    color: #222;
+  }
+
+  .footer button a:hover {
+    color: #222;
+  }
 }

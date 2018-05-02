@@ -82,7 +82,7 @@ header {
 .pop-menu .nav {
   display: block;
   margin: 2em 0 0 0;
-  padding: 0 1em;
+  padding: 0 2em 0 1em;
 }
 
 .pop-menu .nav li {

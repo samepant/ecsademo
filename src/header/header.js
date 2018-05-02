@@ -82,8 +82,14 @@ class PopMenu extends Component {
     }
   }
 
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this))
+  }
 
-
+  updateDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
   render () {
     return (
       <div className='pop-menu' style={{width: this.state.width, height: this.state.height}}>
@@ -91,7 +97,7 @@ class PopMenu extends Component {
         <Logo isLight={true} />
         <ul className='nav'>
           <li><button><a href='https://t.me/economicspaceagency'>Join us on telegram</a></button></li>
-          <li><button><a href='https://medium.com/economic-spacing'>Blog</a></button></li>
+          <li><button><a href='https://medium.com/economic-spacing'>Read our blog</a></button></li>
         </ul>
       </div>
     )

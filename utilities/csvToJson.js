@@ -12,6 +12,7 @@ if (process.argv[2]) {
 
 let ecsaTeam = []
 let advisors = []
+let advisorCategories = []
 csv()
   .fromFile(csvFile)
   .on('json', jsonObj => {
@@ -19,15 +20,19 @@ csv()
       ecsaTeam.push(jsonObj)
     } else if (jsonObj.mainCategory === 'Advisors') {
       advisors.push(jsonObj)
+      if (!advisorCategories.includes(jsonObj.subCategory)) {
+        advisorCategories.push(jsonObj.subCategory)
+      }
     }
   })
   .on('done', err => {
     if (err) throw err;
     const finalObject = {
       'ecsaTeam': ecsaTeam,
-      'advisors': advisors
+      'advisors': advisors,
+      'categories': advisorCategories
     }
-    console.log(`I found ${ecsaTeam.length} ECSA team members and ${advisors.length} Advisors`)
+    console.log(`I found ${ecsaTeam.length} ECSA team members and ${advisors.length} Advisors in ${advisorCategories.length} sub categories`)
     const stringJson = JSON.stringify(finalObject)
     fs.writeFile('../src/assets/team.json', stringJson, 'utf8', err => {
       if (err) throw err;

@@ -1,0 +1,38 @@
+.team-page-container {
+  padding: 0 2em;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  display: flex;
+  width: 30%;
+  padding: 2em 1em;
+}
+
+.team-member .headshot {
+  display: block;
+  width: 25%;
+}
+
+.team-member .info {
+  width: 75%;
+  padding-left: 1em;
+}
+
+.team-member .info p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.team-member .info .name {
+  font-weight: 600;
+}
+
+.headshot img {
+  width: 100%;
+}

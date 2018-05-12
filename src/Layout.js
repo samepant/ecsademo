@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import {Header} from './header/header.js'
-import Hero from './hero.js'
-import Gravity from './landingPage/gravity.js'
 import Footer from './footer/footer.js'
 import Contact from './contact.js'
-import './App.css'
 
-class App extends Component {
+class Layout extends Component {
   constructor () {
     super()
 
@@ -27,10 +24,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         <Header />
-        <Hero contactFunction={this.toggleContact} />
-        <Gravity />
+        {this.props.children}
         <Footer contactFunction={this.toggleContact} />
         { this.state.showContact && <Contact contactFunction={this.toggleContact} />}
       </div>
@@ -38,4 +34,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Layout;

@@ -1,6 +1,5 @@
 header {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .light {
@@ -22,7 +21,11 @@ header {
   display: flex;
   align-items: flex-start;
   padding: 0;
-  margin: 2em 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 5;
 }
 
 .nav li:last-child {
@@ -32,14 +35,13 @@ header {
 .nav-drop {
   background: white;
   margin-right: 2em;
-  border: 1px solid white;
 }
 
 .nav-drop:hover {
 }
 
 .nav-drop-list:hover .nav-drop-hide {
-  visibility: visible;
+  display: block;
 }
 
 .nav-drop-label {
@@ -54,7 +56,7 @@ header {
 }
 
 .nav-drop-hide {
-  visibility: hidden;
+  display: none;
 }
 
 .nav-drop-list {
@@ -97,6 +99,9 @@ header {
   margin: 1em 0 1em 1em;
   cursor: pointer;
   display: none;
+  position: absolute;
+  top: 0em;
+  right: 0em;
 }
 
 .nav-box .nav-button::after {
@@ -145,6 +150,9 @@ header {
 
   .nav {
     display: none;
+    position: relative;
+    top: 0;
+    right: 0;
   }
 
   .logo {

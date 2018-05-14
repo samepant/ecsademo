@@ -1,10 +1,6 @@
 import React from 'react';
 
-export default class team extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+export class Team extends React.Component {
   render() {
     const team = this.props.teamData.map(member => {
       return <TeamMember info={member} key={member.name} />
@@ -18,7 +14,7 @@ export default class team extends React.Component {
 }
 
 
-function TeamMember(props) {
+export function TeamMember(props) {
   return (
     <div className='team-member'>
       <div className='headshot'>
@@ -26,17 +22,16 @@ function TeamMember(props) {
       </div>
       <div className='info'>
         <p className='name'>{props.info.name}</p>
-        <p>{props.info.ecsaRole}</p>
         <p>{props.info.job}</p>
       </div>
     </div>
   )
 }
 
-function Headshot (props) {
-  let srcURL = '/headshots/team/Blank_Male.png'
+export function Headshot (props) {
+  let srcURL = '/headshots/Blank_Male.png'
   if (props.headshot !== '') {
-    srcURL = '/headshots/team/' + props.headshot
+    srcURL = '/headshots/' + props.headshot
   }
   return (
     <img src={srcURL} alt={props.name + ' headshot'} />

@@ -4,7 +4,7 @@ import './project.css'
 const Gravity = (props) => {
   return (
     <div className='project-box'>
-      <h2>ECSA member projects</h2>
+      <h2>The ECSA stack for economic and informational freedom</h2>
       <div className='project full-image-strength'>
         <p><span className='project-name'>Gravity</span> is a resilient distributed programming language and runtime, with a secure computational model and cryptographically secured persistent state and protocols.</p>
         <ul className='features'>

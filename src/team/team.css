@@ -1,0 +1,162 @@
+.team-page-container {
+  padding: 0 2em;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.intro {
+  margin: 5em 0 4em 0;  
+}
+
+.intro h1 {
+  font-size: 3em;
+}
+
+.intro p {
+  margin-left: 2em;
+}
+
+.team-member {
+  display: flex;
+  width: 30%;
+  margin: 1% 1% 0 1%;
+}
+
+.team-member .headshot {
+  display: block;
+  width: 25%;
+  max-width: 80px;
+}
+
+.team-member .info {
+  width: 75%;
+  padding-left: 1em;
+}
+
+.team-member .info p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.9em;
+}
+
+.team-member .info .name {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.headshot img {
+  width: 100%;
+}
+
+.advisor-group {
+  position: relative;
+  display: flex;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #222;
+}
+
+.advisor-group:first-child {
+  padding-top: 1em;
+  border-top: 1px solid #222;
+}
+
+.advisors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.advisor-group .label {
+  width: 30%;
+}
+
+.advisor-group .label h3 {
+  margin: 0;
+}
+
+.advisors .team-member {
+  width: 48%;
+}
+
+.advisors .team-member:first-child {
+  margin-top: 0;
+}
+
+.advisors .team-member:nth-child(2) {
+  margin-top: 0;
+}
+
+.collapse-icon {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.2em;
+}
+
+@media (max-width: 850px) {
+  .team-member {
+    width: 45%;
+    margin: 2% 0 0 0;
+  }
+
+  .team-page-container {
+    padding: 0 1em;
+  }
+  .advisors .team-member {
+    width: 98%;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .intro p {
+    margin-left: 0;
+  }
+
+  .team-member {
+    width: 98%;
+    margin: 4% 0 0 0;
+  }
+
+  .team-page-container {
+    padding: 0;
+  }
+  
+  .advisor-group {
+    display: block;
+    padding: 1em 0;
+    margin-bottom: 0;
+  }
+
+  .advisor-group .label {
+    width: 75%;
+  }
+
+  .advisor-group .label h3 {
+    margin: 0;
+  }
+
+  .advisors {
+    width: 100%;
+  }
+    
+  .advisors .team-member {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .advisors .team-member:first-child {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .advisors .team-member:nth-child(2) {
+    margin: 0.5em 0 0.5em 0;
+  }
+}

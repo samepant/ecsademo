@@ -20,30 +20,73 @@ header {
 .nav {
   list-style: none;
   display: flex;
+  align-items: flex-start;
   padding: 0;
-  margin: 0 6em 0 0;
-}
-
-.nav li {
-  margin: 5.5em 0 3em 0;
-  transform: rotateZ(-30deg);
-  width: 60px;
+  margin: 2em 0;
 }
 
 .nav li:last-child {
   margin-right: 0;
 }
 
+.nav-drop {
+  background: white;
+  margin-right: 2em;
+  border: 1px solid white;
+}
+
+.nav-drop:hover {
+}
+
+.nav-drop-list:hover .nav-drop-hide {
+  visibility: visible;
+}
+
+.nav-drop-label {
+  padding: 1em;
+  border: 1px solid #222;
+}
+
+.nav-drop-list:hover .nav-drop-label {
+  background: #222;
+  color: white;
+  border-bottom: 1px solid #222;
+}
+
+.nav-drop-hide {
+  visibility: hidden;
+}
+
+.nav-drop-list {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-drop-list li {
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+}
+
+.nav-drop-list a {
+  display: block;
+  padding: 1em;
+}
+
+.nav-drop-list a:hover {
+  background: #222;
+  color: white;
+  cursor: url('../assets/buttonopen.png') 20 10, crosshair;
+}
+
 .nav a {
   display: block;
   color: #222;
   text-decoration: none;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
 .nav a:hover {
-  transform: skew(-15deg);
 }
 
 .nav-box .nav-button {

@@ -28,8 +28,23 @@ export class Header extends Component {
         </div>
         <div className='nav-box'>
           <ul className='nav'>
-            <li><a href='https://t.me/economicspaceagency'>Join us on telegram</a></li>
-            <li><a href='https://medium.com/economic-spacing'>Read our blog</a></li>
+            <li className='nav-drop'>
+              <ul className='nav-drop-list' id='broadcasts'>
+                <li className='nav-drop-label'>BROADCASTS</li>
+                <div className='nav-drop-hide'>
+                  <li><a href='https://medium.com/economic-spacing'>Read our blog</a></li>
+                </div>
+              </ul>
+            </li>
+            <li className='nav-drop'>
+              <ul className='nav-drop-list' id='specifications'>
+                <li className='nav-drop-label'>SPECIFICATIONS</li>
+                <div className='nav-drop-hide'>
+                  <li><a href='/team'>Team</a></li>
+                  <li><a href='https://github.com/EconomicSpaceAgency'>Repositories</a></li>
+                </div>
+              </ul>
+            </li>
           </ul>
           <button className='nav-button' onClick={this.toggleMenu}>Menu</button>
           {this.state.showPopMenu && <PopMenu closeFunction={this.toggleMenu} />}
@@ -98,8 +113,11 @@ class PopMenu extends Component {
         <button className='close nav-button' onClick={this.props.closeFunction}>╳</button>
         <Logo isLight={true} />
         <ul className='nav'>
-          <li><button><a href='https://t.me/economicspaceagency'>Join us on telegram</a></button></li>
+          <li><h3>BROADCASTS</h3></li>
           <li><button><a href='https://medium.com/economic-spacing'>Read our blog</a></button></li>
+          <li><h3>SPECIFICATIONS</h3></li>
+          <li><button><a href='/team'>Team</a></button></li>
+          <li><button><a href='https://github.com/EconomicSpaceAgency'>Repositories</a></button></li>
         </ul>
       </div>
     )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 import './header.css'
 
 export class Header extends Component {
@@ -40,7 +41,7 @@ export class Header extends Component {
               <ul className='nav-drop-list' id='specifications'>
                 <li className='nav-drop-label'>SPECIFICATIONS</li>
                 <div className='nav-drop-hide'>
-                  <li><a href='/team'>Team</a></li>
+                  <li><NavLink to='/team'>Team</NavLink></li>
                   <li><a href='https://github.com/EconomicSpaceAgency'>Repositories</a></li>
                 </div>
               </ul>
@@ -114,10 +115,10 @@ class PopMenu extends Component {
         <Logo isLight={true} />
         <ul className='nav'>
           <li><h3>BROADCASTS</h3></li>
-          <li><button><a href='https://medium.com/economic-spacing'>Read our blog</a></button></li>
+          <li><button className='with-link'><a href='https://medium.com/economic-spacing'>Read our blog</a></button></li>
           <li><h3>SPECIFICATIONS</h3></li>
-          <li><button><a href='/team'>Team</a></button></li>
-          <li><button><a href='https://github.com/EconomicSpaceAgency'>Repositories</a></button></li>
+          <li><button className='with-link'><NavLink to='/team'>Team</NavLink></button></li>
+          <li><button className='with-link'><a href='https://github.com/EconomicSpaceAgency'>Repositories</a></button></li>
         </ul>
       </div>
     )

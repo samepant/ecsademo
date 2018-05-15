@@ -11,8 +11,8 @@ import './App.css'
 ReactDOM.render(
   <Router>
     <div>
-      <Route location={window.location} key={window.location.key} exact path="/" component={LandingPage} />
-      <Route location={window.location} key={window.location.key} exact path="/team" component={TeamPage} />
+      <Route location={window.location} key={window.location.key} exact path={`${process.env.PUBLIC_URL}/`} component={LandingPage} />
+      <Route location={window.location} key={window.location.key} exact path={`${process.env.PUBLIC_URL}/`} component={TeamPage} />
     </div>
   </Router>,
   document.getElementById('root')
